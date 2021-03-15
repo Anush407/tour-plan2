@@ -8,12 +8,12 @@
     &__offer
       margin-left: 14px
       margin-top: 4px
+
     &__name
       margin-top: 4px
       margin-bottom: 0
     &__description
       margin: 0
-      max-width: 240px
 
   &-name
     font-size: 24px
@@ -27,11 +27,14 @@
     line-height: 15px
 .stars
   flex-basis: 100%
-
+  display: flex
+.star
+  margin-right: 3px
 .offer
   font-size: 10px
   line-height: 13px
-  padding-bottom: 4px 9px
+  font-weight: 600
+  padding: 4px 9px
   background-color: $primary
   border-radius: 3px
   color: $light
@@ -45,6 +48,12 @@
   &__text
     font-size: 8px
     line-height: 10px
+    font-weight: 600
   &__counter
     font-size: 14px
     line-height: 18px
+    font-weight: bold
+    &_small
+      font-size: 10px
+      font-weight: 13px
+      margin-left: -2px
