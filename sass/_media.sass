@@ -16,11 +16,13 @@
             padding-top: 30px
             padding-bottom: 30px
         &__search
-            margin-left: auto
+            margin-left: 47px
+            margin-right: auto
 
         &-menu
-            padding-top: 22px
-            padding-bottom: 22px
+            padding-top: 21px
+            padding-bottom: 21px
+            margin: 0 13px
             &__link
                 font-size: 12px
                 line-height: 15px
@@ -28,10 +30,10 @@
         &__input
             width: 340px
 
-@media (max-width: 768px)
+@media (max-width: 767px)
     .container
         max-width: 576px
-        width: 92%
+        width: 89%
     .navbar
         &-menu, &__search, &__user
             display: none
@@ -60,7 +62,9 @@
     .container
         max-width: 320px
     .navbar
+        &-top
+            padding-top: 25px
+            padding-bottom: 27px
         &-menu
-            display: initial
             align-items: center
             margin-bottom: 20px
