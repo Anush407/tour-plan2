@@ -72,6 +72,11 @@
         &-slider
             &__item
                 max-width: 579px
+                &:after, &:before
+                    display: none
+            &__profile
+                margin-left: 6px
+
             &__avatar
                 margin-bottom: 7px
             &__username
@@ -163,13 +168,16 @@
             flex-direction: column
             min-height: auto
         &-slider
-            height: 350px
+            height: 300px
 
     .booking
         width: 100%
+        height: 200px
+        margin-bottom: 20px
 
     .map
         width: 100%
+        height: 200px
     .newsletter
         &-wrapper
             max-width: 576px
@@ -215,8 +223,18 @@
 
     .subscribe
         width: 100%
+
+    .activities
+        &__title
+            margin-bottom: 40px
+        &__card
+            height: 160px
+            weight: 160px
     .card
-        height: 100%
+        &__button
+            padding: 6px 18px
+        &__title
+            margin-bottom: 4px
 
 @media (max-width: 320px)
     .container
@@ -298,7 +316,7 @@
         &__card
             width: 280px
             height: 255px
-            order: -1
+
             &:nth-child(1)
                 order: -4
             &:nth-child(3)
