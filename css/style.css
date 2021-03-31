@@ -1854,12 +1854,19 @@ img {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .navbar-menu__item--mobile--visible {
+    width: 340px;
+    margin-left: -30px;
+  }
 }
 
 @media (max-width: 320px) {
   .container {
     max-width: 320px;
     width: 88%;
+  }
+  .navbar-bottom {
+    padding-top: 7px;
   }
   .navbar-top {
     padding-top: 25px;
@@ -2052,6 +2059,17 @@ img {
     grid-row: 10;
     -ms-grid-column: 1;
     grid-column: 1;
+  }
+  .navbar-menu__item {
+    margin-bottom: 18px;
+  }
+  .navbar-menu__item--mobile--visible {
+    width: 300px;
+    margin-right: 45px;
+    margin-bottom: 29px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

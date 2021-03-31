@@ -336,12 +336,22 @@
             &-form
                 grid-row: 7
                 grid-column: 1
+    .navbar
+        &-menu
+            &__item
+                &--mobile
+                    &--visible
+                        width: 340px
+                        margin-left: -30px
 
 @media (max-width: 320px)
     .container
         max-width: 320px
         width: 88%
     .navbar
+        &-bottom
+            padding-top: 7px
+
         &-top
             padding-top: 25px
             padding-bottom: 27px
@@ -487,3 +497,14 @@
         &__button
             grid-row: 10
             grid-column: 1
+    .navbar
+        &-menu
+            &__item
+                margin-bottom: 18px
+                &--mobile
+                    &--visible
+                        width: 300px
+                        margin-right: 45px
+                        margin-bottom: 29px
+
+                        justify-content: center
