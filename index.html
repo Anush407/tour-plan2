@@ -101,7 +101,7 @@
       </div>
       <div class="rating hotel-info__rating">
         <span class="rating__text">User Rattings</span>
-        <span class="rating__counter">4.5/ <span class="rating__counter_small">5</span></span>
+        <span class="rating__counter">4.5/ <span class="rating__counter rating__counter_small">5</span></span>
       </div>
     </div>
   <div class="hotel-grid">
@@ -403,7 +403,7 @@ quest" class="card__image">
           <div class="footer__icon-wrapper">
            <img class="footer__icon" src="img/phone-call.svg" alt="icon: phone call"/>
            </div>
-           Tel (business hours) : 269 1500 </br> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) </br> Tel (hotline) Sunday:
+           Tel (business hours) : 269 1500 <br> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br> Tel (hotline) Sunday:
           52-56-61-38 (08:00 am – 14:00 pm)
          </li>
          <li class="footer__item footer__item--mb-2">
@@ -418,10 +418,10 @@ quest" class="card__image">
 
      <div class="footer__contact-form">
        <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-       <form action="#" class="footer__form">
-         <input type="text" class="input footer__input" placeholder="Your Full Name*"/>
-         <input type="text" class="input footer__input" placeholder="Phone Number*"/>
-         <textarea class= "footer__message"  cols="30" rows="10" placeholder="Message">
+       <form action="send.php" method="POST" class="footer__form">
+         <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name"/>
+         <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone"/>
+         <textarea class= "footer__message"  cols="30" rows="10" placeholder="Message" name="message">
 
          </textarea>
          <button class="button footer__button" type="submit">Send</button>
@@ -436,7 +436,7 @@ quest" class="card__image">
  
   <div class="footer-bottom">
     <div class="footer-grid">
-   <div class="footer-rules__links">
+   <div class="footer-rules">
      <a href="#" class="footer-rules__link">Disclaimer</a>
      <a href="#" class="footer-rules__link">Conditions of use</a>
      <a href="#" class="footer-rules__link">Cancellation policy</a>
