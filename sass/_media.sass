@@ -219,6 +219,8 @@
             padding-top: 31px
             &--visible
                 display: block
+                overflow: auto
+
         &-menu
             flex-direction: column
             &__item
@@ -325,6 +327,13 @@
             max-width: 89%
         &__input
             flex-basis: 100%
+    .navbar
+        &-menu
+            &__link
+                font-style: normal
+                font-weight: bold
+                font-size: 18px
+                line-height: 23px
 
 @media (max-width: 576px)
     .logo
@@ -390,12 +399,22 @@
             margin-bottom: 10px
 
     .navbar
+        &__search
+            margin-left: 0
+        &__user
+            &--mobile
+                &--visible
+                    margin-right: 0
         &-menu
+            &__link
+                font-style: normal
+                font-weight: bold
+                font-size: 12px
+                line-height: 15px
             &__item
                 &--mobile
                     &--visible
-                        width: 340px
-                        margin-left: -30px
+                        width: 320px
 
 @media (max-width: 320px)
     .container
@@ -403,8 +422,16 @@
         width: 88%
         margin-bottom: -5px
     .navbar
+        &__search
+            &--mobile
+                &--visible
+                    margin-left: 28px
+                    width: 243px
+                    margin-bottom: 7px
         &-bottom
-            padding-top: 7px
+            top: 70px
+            &--visible
+                padding-top: 10px
 
         &-top
             padding-top: 25px
@@ -596,14 +623,15 @@
             display: flex
             flex-wrap: wrap
             margin-right: 0
+
     .navbar
         &-menu
             &__item
-                margin-bottom: 18px
+                margin-bottom: 17px
                 &--mobile
                     &--visible
                         width: 300px
                         margin-right: 45px
                         margin-bottom: 29px
-
+                        margin-left: 48px
                         justify-content: center
