@@ -65,12 +65,16 @@ $('.form').each(function() {
     },
     phone: {
       required: "Specify your phone number",
-      minlength: "номер телефона должен содержать 11 цифр",
+      minlength: "You must enter 11 digits",
     },
   },
 });
 });
   AOS.init();
+
+  // Формат для телефона
+  $(".modal__input-phone").mask("+7 (000) 000-00-00");
+  $(".footer__input-phone").mask("+7 (000) 000-00-00");
 });
 
 
