@@ -36,6 +36,11 @@ modalButton.on("click", openModal);
 
 closeModalButton.on('click', closeModal);
 
+const cardButton = document.querySelectorAll('.card__button');
+cardButton.forEach(btn => {
+  btn.addEventListener('click', openModal);
+});
+
 function openModal() {
   var modalOverlay=$('.modal__overlay');
   var modalDialog=$('.modal__dialog');

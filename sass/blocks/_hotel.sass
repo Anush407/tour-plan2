@@ -1,6 +1,7 @@
 .hotel
   padding-top: 23px
   padding-bottom: 70px
+
   &-info
     display: flex
     align-items: center
@@ -9,7 +10,6 @@
     &__offer
       margin-left: 14px
       margin-top: 4px
-
     &__name
       margin-top: 4px
       margin-bottom: 0
@@ -82,8 +82,8 @@
 .stars
   flex-basis: 100%
   display: flex
-.star
-  margin-right: 3px
+.star:not(:last-child)
+  margin-right: 2px
 .offer
   font-size: 10px
   line-height: 13px
@@ -123,9 +123,9 @@
   border-radius: 8px
   width: 350px
   min-height: 210px
-  padding-top: 28px
-  padding-right: 28px
-  padding-left: 28px
+  padding-top: 29px
+  padding-right: 29px
+  padding-left: 27px
   font-family: 'Nunito'
   &__info
     display: flex
@@ -137,7 +137,7 @@
   &__start
     font-weight: normal
     font-size: 10px
-    line-height: 14px
+    line-height: 16px
   &__pricetag
     font-style: normal
     font-weight: 800
@@ -197,9 +197,32 @@
     cursor: pointer
     outline: none
     padding-bottom: 10px
+    padding-top: 10px
 .map
   width: 347px
   height: 213px
   background-color: black
   border-radius: 10px
   overflow: hidden
+  &__iframe
+    height: 100%
+    width: 100%
+    border: none
+.button
+  &__menu
+    text-decoration: none
+    width: 80px
+    min-height: 45px
+    padding: 10px 12px
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    border-radius: 4px
+    background-color: $primary
+    border: none
+    color: $light
+    cursor: pointer
+.mainmenu
+  &__button
+    width: 100px
+    margin-top: 20px
